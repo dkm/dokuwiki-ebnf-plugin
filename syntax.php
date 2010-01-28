@@ -61,7 +61,7 @@ class syntax_plugin_ebnf extends DokuWiki_Syntax_Plugin {
              $text = preg_replace( "/[<>]+/", "", $text);
              $text = preg_replace( "/[\\n\\r\\t ]+/", " ", $text);
              $text = urlencode($text);
-             $renderer->doc .= "<img src='".DOKU_URL."lib/plugins/ebnf/ebnf.php?syntax=$text' alt='$text'/>";            // ptype = 'normal'
+             $renderer->doc .= "<img src=\"".DOKU_URL."lib/plugins/ebnf/ebnf.php?syntax=$text\" alt=\"$text\" class=\"ebnf\" />";            // ptype = 'normal'
             } catch (Exception $e) {
               $renderer->doc .= "<pre>".htmlentities($text)."\n".$e."</pre>";
             }
