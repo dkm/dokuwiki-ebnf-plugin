@@ -104,7 +104,7 @@ function rr($im, $x1, $y1, $x2, $y2, $r, $black){
 function create_image($w, $h) {
   global $white, $black, $blue, $red, $green, $silver;
   $im = imagecreatetruecolor($w, $h) or die("no img");
-  imageantialias($im, true);
+  //imageantialias($im, true);
   $white = imagecolorallocate ($im, 255, 255, 255);
   $black = imagecolorallocate ($im, 0, 0, 0);
   $blue = imagecolorallocate ($im, 0, 0, 255);
